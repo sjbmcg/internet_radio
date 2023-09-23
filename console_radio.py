@@ -23,9 +23,8 @@ def play_stream(url):
         print('Success!')
         player = vlc.MediaPlayer(url)
         player.play()
-
-        # Allow some time for the stream to start playing.
-        time.sleep(2)
+        
+        time.sleep(1)
 
         return player
     else:
